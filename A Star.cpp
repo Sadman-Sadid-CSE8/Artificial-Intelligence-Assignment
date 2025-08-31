@@ -11,7 +11,7 @@ struct Edge {
 
 int greedyBestFirstSearch(int start, int goal, vector<vector<Edge>>& graph, vector<int>& heuristic) {
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
-    pq.push({heuristic[start], start}); // f(n) = h(n)
+    pq.push({heuristic[start], start});
 
     vector<bool> visited(graph.size(), false);
 
